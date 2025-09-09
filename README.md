@@ -38,6 +38,10 @@ It allows users to generate **AI-powered images** based on text prompts using th
 
 ---
 
+⚠️ Note: For security reasons, the Hugging Face API key is not included in this repository.  
+To make the demo work, please add your own key in config.js (see config.example.js).
+
+
 ## 🎯 Internship Context
 This project was developed as **Task 2 (REST API Integration)** during my internship with **Codveda Technologies**.  
 It demonstrates my ability to integrate external REST APIs and build a responsive, interactive front-end project.  
