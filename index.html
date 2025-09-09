@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h1>AI Image Generator</h1>
+            </div>
+            <button type="button" class="theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+
+        <!-- MAin Content -->
+        <div class="main-content">
+            <form action="#" class="form-prompot">
+                <!-- Prpmpot Container -->
+                <div class="prompot-container">
+                    <textarea class="prompot-input" placeholder="Write Detail To generate Image..." autofocus
+                        required></textarea>
+                    <button type="button" class="prompot-btn"> <!--  submit بيكون defaulلان ال button هنا عملت نوعه  -->
+                        <i class="fa-solid fa-dice"></i>
+                    </button>
+                </div>
+
+                <!-- Prompot Actions & Buttons -->
+                <div class="prompot-actions">
+                    <div class="select-wrapper">
+                        <select class="custom-select" id="model-select" required>
+                            <option value="" selected disabled>Select Model</option>
+                            <option value="black-forest-labs/FLUX.1-schnell">Flux.1-schnell</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <select class="custom-select" id="count-select" required>
+                            <option value="" selected disabled>Image Count</option>
+                            <option value="1">1 Image </option>
+                            <option value="2">2 Image </option>
+                            <option value="3">3 Image </option>
+                            <option value="4">4 Image </option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <select class="custom-select" id="ratio-select" required>
+                            <option value="" selected disabled>Aspect Ratio</option>
+                            <option value="1/1">Square (1:1)</option>
+                            <option value="16/9">Landscape (16:9)</option>
+                            <option value="9/16">Portarait (9:16)</option>
+                        </select>
+                    </div>
+
+                    <button class="generate-btn" type="submit">
+                        Generate image
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </button>
+                </div>
+
+                <!-- Result Gallery Grid -->
+                <div class="gallery-grid">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
